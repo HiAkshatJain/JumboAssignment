@@ -39,7 +39,7 @@ npx expo start --tunnel
 
 ## 📱 Demo
 
-▶️ [Watch Demo Video](https://github.com/HiAkshatJain/JumboAssignment/raw/main/video/demo.mp4)
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]("https://youtube.com/shorts/1Po1vc07BLc?feature=share")
 
 ## 📸 Screens
 
