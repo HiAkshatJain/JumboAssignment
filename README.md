@@ -39,7 +39,9 @@ npx expo start --tunnel
 
 ## 📱 Demo
 
-▶ [Watch Demo Video (autoplay)]("https://youtube.com/shorts/1Po1vc07BLc?feature=share")
+▶ [Watch Demo Video (autoplay)]
+
+[![Watch the video](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)]("https://youtube.com/shorts/1Po1vc07BLc?feature=share")
 
 ## 📸 Screens
 
