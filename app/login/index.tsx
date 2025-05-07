@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { loginUser } from "../../api/auth";
 import { getSession, saveSession } from "../../utils/sessionMgmt";
+import Toast from "react-native-toast-message";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
@@ -19,10 +20,20 @@ export default function LoginScreen() {
     try {
       const res = await loginUser({ email, password });
       await saveSession({ email: res.user.email, password });
-      console.log("session", await getSession());
       router.push("/properties");
+      Toast.show({
+        type: "success",
+        text1: "Success",
+        text2: "Login successfully!",
+        visibilityTime: 2000,
+      });
     } catch (err: any) {
-      Alert.alert("Login Failed", err.message);
+      Toast.show({
+        type: "error",
+        text1: "Error",
+        text2: `Login Failed ${err.message}`,
+        visibilityTime: 2000,
+      });
     }
   };
 

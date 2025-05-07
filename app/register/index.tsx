@@ -9,6 +9,7 @@ import {
   View,
 } from "react-native";
 import { registerUser } from "../../api/auth";
+import Toast from "react-native-toast-message";
 
 export default function RegisterScreen() {
   const [name, setName] = useState("");
@@ -17,24 +18,41 @@ export default function RegisterScreen() {
 
   const handleRegister = async () => {
     if (!name.trim() || !email.trim() || !password.trim()) {
-      Alert.alert("Error", "Please fill all fields.");
+      Toast.show({
+        type: "error",
+        text1: "Error",
+        text2: "Please fill all fields.",
+        visibilityTime: 2000, // <-- hide after 2 seconds
+      });
+      return;
+    }
+
+    if (password.length < 8) {
+      Toast.show({
+        type: "error",
+        text1: "Error",
+        text2: "Password Must be more than 8 letters.",
+        visibilityTime: 2000, // <-- hide after 2 seconds
+      });
       return;
     }
 
     try {
       const res = await registerUser({ email, password });
-      // await saveSession({ email: res.user.email, name });
       router.push("/");
-      console.log("registered successull", email, password, name);
-      Alert.alert(
-        "Registration Successfull",
-        "Login to see exiciting properties"
-      );
+      Toast.show({
+        type: "success",
+        text1: "Success",
+        text2: `Sign up successull ${name}`,
+        visibilityTime: 2000, // <-- hide after 2 seconds
+      });
     } catch (err: any) {
-      Alert.alert(
-        "Registration Failed",
-        err.message || "Something went wrong."
-      );
+      Toast.show({
+        type: "error",
+        text1: "Error",
+        text2: "Failed to Sign up.",
+        visibilityTime: 2000, // <-- hide after 2 seconds
+      });
     }
   };
 

@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import { getDistance } from "@/utils/location";
+import Toast from "react-native-toast-message";
 import * as Location from "expo-location";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import React, { useEffect, useState } from "react";
@@ -20,6 +21,34 @@ export default function PropertyDetails() {
   const [property, setProperty] = useState<any>(null);
   const [distance, setDistance] = useState<Number>();
   const [locationPermission, setLocationPermission] = useState<Boolean>(false);
+
+  const handleUnlock = () => {
+    Toast.show({
+      type: "info",
+      text1: "Unlocking...",
+      visibilityTime: 1000,
+    });
+
+    setTimeout(() => {
+      const success = Math.random() > 0.5;
+
+      if (success) {
+        Toast.show({
+          type: "success",
+          text1: "Success",
+          text2: "Home unlocked successfully!",
+          visibilityTime: 4000, // <-- hide after 2 seconds
+        });
+      } else {
+        Toast.show({
+          type: "error",
+          text1: "Error",
+          text2: "Failed to unlock the home.",
+          visibilityTime: 4000, // <-- hide after 2 seconds
+        });
+      }
+    }, 2000);
+  };
 
   useEffect(() => {
     if (!property) return;
@@ -89,13 +118,10 @@ export default function PropertyDetails() {
           </Text>
         )}
 
-        {typeof distance === "number" && distance < 50 && (
-          <Button
-            route="/"
-            color="#00FF00"
-            label="Unlock Home"
-            isDisable={true}
-          />
+        {typeof distance === "number" && distance <= 50 && (
+          <TouchableOpacity style={styles.unlockButton} onPress={handleUnlock}>
+            <Text style={styles.unlockButtonText}>Unlock Home</Text>
+          </TouchableOpacity>
         )}
 
         {typeof distance === "number" && distance > 50 && (
@@ -154,6 +180,18 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
     elevation: 5,
+  },
+  unlockButton: {
+    backgroundColor: "#00FF00",
+    padding: 12,
+    marginTop: 20,
+    borderRadius: 8,
+    alignItems: "center",
+  },
+  unlockButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "600",
   },
   backButtonText: {
     fontSize: 16,

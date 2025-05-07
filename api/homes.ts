@@ -26,7 +26,7 @@ export const homes: Home[] = [
     image:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
     latitude: 28.4595,
-    longitude: 377.0266,
+    longitude: 37.0266,
   },
   {
     id: "4",
@@ -34,7 +34,7 @@ export const homes: Home[] = [
     description: "Elegant 3-bedroom flat in business district.",
     image:
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
-    latitude: 528.5048,
+    latitude: 58.5048,
     longitude: 77.0861,
   },
   {
@@ -44,7 +44,7 @@ export const homes: Home[] = [
     image:
       "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
     latitude: 28.5112,
-    longitude: 767.0396,
+    longitude: 76.0396,
   },
   {
     id: "6",
@@ -52,8 +52,8 @@ export const homes: Home[] = [
     description: "Contemporary studio apartment with premium fittings.",
     image:
       "https://plus.unsplash.com/premium_photo-1687960117069-567a456fe5f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
-    latitude: 328.4442,
-    longitude: 77.0657,
+    latitude: 32.4442,
+    longitude: 47.0657,
   },
   {
     id: "7",
@@ -62,7 +62,7 @@ export const homes: Home[] = [
     image:
       "https://images.unsplash.com/photo-1448630360428-65456885c650?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
     latitude: 28.4593,
-    longitude: 777.0483,
+    longitude: 77.0483,
   },
   {
     id: "8",
@@ -71,7 +71,7 @@ export const homes: Home[] = [
     image:
       "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
     latitude: 28.4958,
-    longitude: 477.0881,
+    longitude: 47.0881,
   },
   {
     id: "9",
@@ -79,7 +79,7 @@ export const homes: Home[] = [
     description: "3BHK apartment next to major shopping mall.",
     image:
       "https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb3BlcnR5fGVufDB8fDB8fHww",
-    latitude: 238.4709,
+    latitude: 23.4709,
     longitude: 77.0648,
   },
   {
@@ -88,8 +88,8 @@ export const homes: Home[] = [
     description: "Well-lit 2-bedroom flat in quiet locality.",
     image:
       "https://plus.unsplash.com/premium_photo-1663089688180-444ff0066e5d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvcGVydHl8ZW58MHx8MHx8fDA%3D",
-    latitude: 2438.4567,
-    longitude: 774.0725,
+    latitude: 28.4567,
+    longitude: 74.0725,
   },
   {
     id: "11",
@@ -97,8 +97,8 @@ export const homes: Home[] = [
     description: "Duplex villa with rooftop terrace.",
     image:
       "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    latitude: 2438.5261,
-    longitude: 767.0403,
+    latitude: 38.5261,
+    longitude: 67.0403,
   },
   {
     id: "12",
@@ -106,8 +106,8 @@ export const homes: Home[] = [
     description: "Newly-built apartment with smart home features.",
     image:
       "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    latitude: 6728.4802,
-    longitude: 677.1039,
+    latitude: 67.4802,
+    longitude: 67.1039,
   },
   {
     id: "13",
@@ -115,8 +115,8 @@ export const homes: Home[] = [
     description: "Premium floor in gated society.",
     image:
       "https://images.unsplash.com/photo-1502005097973-6a7082348e28?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    latitude: 278.4243,
-    longitude: 767.0519,
+    latitude: 28.4243,
+    longitude: 67.0519,
   },
   {
     id: "14",
@@ -124,8 +124,8 @@ export const homes: Home[] = [
     description: "Top floor 3BHK with balcony and view.",
     image:
       "https://images.unsplash.com/photo-1483097365279-e8acd3bf9f18?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    latitude: 258.5205,
-    longitude: 747.0445,
+    latitude: 28.5205,
+    longitude: 47.0445,
   },
   {
     id: "15",
@@ -133,7 +133,7 @@ export const homes: Home[] = [
     description: "Spacious apartment with clubhouse access.",
     image:
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    latitude: 428.4321,
-    longitude: 757.650734,
+    latitude: 48.4321,
+    longitude: 57.650734,
   },
 ];

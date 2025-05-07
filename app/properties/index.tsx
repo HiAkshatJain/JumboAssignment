@@ -12,6 +12,7 @@ import {
   View,
 } from "react-native";
 import { homes as mockHomes } from "../../api/homes";
+import Toast from "react-native-toast-message";
 
 export default function Properties() {
   const router = useRouter();
@@ -22,8 +23,6 @@ export default function Properties() {
       const session = await getSession();
       if (session?.email) {
         const name = session.email.split("@")[0];
-
-        console.log(name);
         const apiUrl = `https://api.dicebear.com/9.x/initials/png?seed=${name}`;
         setAvatarUrl(apiUrl);
       }
@@ -46,6 +45,11 @@ export default function Properties() {
   const handleLogout = async () => {
     await clearSession();
     router.push("/");
+    Toast.show({
+      type: "info",
+      text1: "Logout Succesfully...",
+      visibilityTime: 2000,
+    });
   };
 
   if (isLoading) {
