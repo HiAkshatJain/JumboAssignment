@@ -24,7 +24,6 @@ export const getSession = async (): Promise<User | null> => {
 export const clearSession = async (): Promise<void> => {
   try {
     await AsyncStorage.removeItem(SESSION_KEY);
-    console.log("session is cleared");
   } catch (error) {
     console.error("Error clearing session:", error);
   }
